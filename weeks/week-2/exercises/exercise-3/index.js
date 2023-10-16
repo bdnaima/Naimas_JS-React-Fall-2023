@@ -41,6 +41,16 @@ const listPokenames = (pokename) => {
 // Create an object for the pokemon Pikachu.
 // it could have properties such as name, element,
 // strength, color, amountOfLegs or something like that.
+console.log("Iteration 02");
+console.log("This iteration pertains to creating an object in code");
+let pokemon = {
+  name: "Pikachu",
+  age: 400,
+  category: "Mouse",
+  abilities: ["static electricity", "cute"],
+  strength: 32,
+  weight: "6.0 KG",
+};
 
 const pikachu = {
   name: "pikachu",
@@ -54,6 +64,11 @@ const pikachu = {
 // console.log something like
 // 'Pikachu is a electricity pokemon with the strength of 32'
 // Selecting some of the information about your pikachu object.
+console.log("Iteration 03");
+console.log(
+  `${pokemon.name} is a ${pokemon.abilities[0]} pokemon with the strength of ${pokemon.strength}`
+);
+console.log("----");
 
 console.log(
   `Pikachu is an ${pikachu.element} pokemon with the strengh of ${pikachu.strength}`
@@ -77,11 +92,15 @@ delete pikachu.stillToCatch;
 // It is an array with objects!
 // I made some suggestions
 // but feel free to change as you want.
+console.log("Iteration 07");
+console.log(
+  "This iteration pertains to adding more pokemonsObjects to the array of objects"
+);
 const moreAboutPokemons = [
   {
     name: "Bulbasaur",
     element: "water",
-    strength: 13,
+    strength: 32,
   },
   {
     name: "Charmander",
@@ -116,6 +135,24 @@ moreAboutPokemons.forEach((name) => {
   console.log(name);
 });
 
+// Using Map
+console.log("---- Using Map() Array Method");
+moreAboutPokemons.map((pokemon) => {
+  console.log(`Pokemon name: ${pokemon.name}`);
+});
+
+// Using Dot Notation
+console.log("---- Using Dot Notation");
+let dotNotationExample = `
+Pokemon names: 
+${moreAboutPokemons[0].name}
+${moreAboutPokemons[1].name}
+${moreAboutPokemons[2].name}
+${moreAboutPokemons[3].name}
+`;
+console.log(dotNotationExample);
+
+console.log("----");
 // 9)
 // Print out something like
 // 'Bulbasaur is a water pokemon with the strength of 32'

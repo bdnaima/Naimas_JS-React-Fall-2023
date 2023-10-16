@@ -16,6 +16,7 @@ const pokemons = [
   "Pidgey",
 ];
 
+console.log("Iteration 01");
 const countThem = () => {
   // print out, in a sentence, how many pokemons I have.
   // like: "I have x pokemons!"
@@ -23,11 +24,15 @@ const countThem = () => {
 };
 countThem();
 
+console.log("Iteration 02");
+console.log("Using sort() method");
 const orderThem = () => {
   // order the pokemons alphabetically
   const orderedPokemons = pokemons.sort((a, b) => a[1].localeCompare(b[1]));
   console.log("This is the ordered array:", orderedPokemons);
 };
+orderThem();
+console.log("----");
 
 orderThem();
 
@@ -36,6 +41,8 @@ const flipThem = () => {
   const reverse = pokemons.reverse();
   console.log(reverse);
 };
+flipThem();
+console.log("----");
 
 flipThem();
 
@@ -52,6 +59,8 @@ const makeThemBig = () => {
     console.log(pokemon.toUpperCase());
   });
 };
+makeThemBig();
+console.log("----");
 
 makeThemBig();
 
@@ -71,6 +80,8 @@ const onlyTheBs = () => {
     }
   });
 };
+onlyTheBsTwo();
+console.log("----");
 
 onlyTheBs();
 
@@ -90,7 +101,10 @@ const notTheCs = () => {
   });
   console.log(filtered);
 };
+notTheCs();
+console.log("----");
 
+console.log("Iteration 07");
 const nameAndIdThanks = () => {
   // print out name and index of all pokemons
   // like: number x - Squirtle
@@ -112,6 +126,9 @@ const catchPokemon = (name) => {
   pokemons.push(name);
   console.log(pokemons);
 };
+catchPokemon("Raichu");
+console.log(pokemons);
+console.log("----");
 
 catchPokemon("Misty-thunder");
 
@@ -134,6 +151,8 @@ const didICatchIt = (name) => {
     console.log(`No! ${name} does not exist!!`);
   }
 };
+didICatchIt("Mewtwo");
+console.log("----");
 
 didICatchIt("Wartortle");
 
@@ -144,6 +163,8 @@ const addInThirdPlace = () => {
 };
 addInThirdPlace();
 
+console.log("Iteration 11 ");
+console.log("Bonus");
 // ***BONUS***
 const theLongestName = () => {
   // find the pokemon with the longest name
